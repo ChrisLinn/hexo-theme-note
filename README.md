@@ -1,9 +1,9 @@
-# hexo-theme-book
+# hexo-theme-note
 
 ## Installation
 
 ```
-git clone https://github.com/kaiiiz/hexo-theme-book.git themes/book
+git clone https://github.com/xieyuheng/hexo-theme-note.git themes/note
 ```
 
 If you don't have scss renderer, follow this:
