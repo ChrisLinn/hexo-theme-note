@@ -81,6 +81,10 @@ hr {
 
   // max-width: 95%;
 
+  pre {
+    font-family: monaco, mono;
+  }
+
   .book-post-title {
     font-size: $font-size-32;
   }
@@ -139,6 +143,11 @@ hr {
     border: 0.5px solid $border-color;
     background-color: $border-color;
     margin: $padding-16 0;
+  }
+
+  code {
+    background-color: #eeeeee;
+    color: #000000;
   }
 
   .table-wrapper {
