@@ -11,8 +11,10 @@
     padding: 0 $padding-16;
   }
 
-  // font-family: 'Noto Sans TC', 'Noto Sans SC', 'Noto Sans', sans-serif;
-  font-family: monaco, mono;
+  font-family:
+    'IBM Plex Serif',
+    'Noto Serif',
+    serif;
 }
 
 .book-content {
@@ -147,8 +149,8 @@ hr {
   }
 
   code {
-    background-color: #eeeeee;
-    color: #000000;
+    background-color: white;
+    color: black;
   }
 
   .table-wrapper {
