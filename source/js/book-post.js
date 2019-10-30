@@ -12,7 +12,7 @@ document
 
 // add table wrapper
 document
-  .querySelectorAll('.book-post > table')
+  .querySelectorAll('.book-post table')
   .forEach((table) => {
     let parent = table.parentNode;
     let wrapper = document.createElement('div');
