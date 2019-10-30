@@ -1,18 +1,18 @@
 /* global hexo */
 
-'use strict';
+"use strict";
 
-hexo.extend.generator.register('home', function(locals){
-  var home = hexo.theme.config.home_page;
-  var home_file;
-  locals.posts.forEach(function(post){
+hexo.extend.generator.register("home", (locals) => {
+  let home = hexo.theme.config.home_page;
+  let home_file;
+  locals.posts.forEach((post) => {
     if(post.source == "_posts/" + home) {
       home_file = post;
     }
   })
   return {
-    path: 'index.html',
+    path: "index.html",
     data: home_file,
-    layout: ['index']
+    layout: ["index"]
   }
-});
+})

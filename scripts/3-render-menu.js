@@ -1,23 +1,23 @@
 /* global hexo */
 
-'use strict';
+"use strict";
 
-var ejs = require('ejs');
+let ejs = require("ejs");
 
-var menufile;
+let menufile;
 
-hexo.on('generateAfter', function () {
-  var menu = hexo.theme.config.menu_page;
-  var posts = hexo.locals.get('posts')
-  posts.forEach(function(post){
+hexo.on("generateAfter", () => {
+  let menu = hexo.theme.config.menu_page;
+  let posts = hexo.locals.get("posts")
+  posts.forEach((post) => {
     if(post.source === "_posts/" + menu) {
       menufile = post;
     }
   })
 })
 
-hexo.extend.renderer.register('ejs', 'html', function(data, options){
+hexo.extend.renderer.register("ejs", "html", (data, options) => {
   options.filename = data.path;
-  options.sidebar = menufile ? menufile.content : '';
+  options.sidebar = menufile ? menufile.content : "";
   return ejs.render(data.text, options);
-}, true);
+}, true)

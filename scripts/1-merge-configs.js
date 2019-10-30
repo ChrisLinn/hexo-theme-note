@@ -1,10 +1,10 @@
 /* global hexo */
 
-'use strict';
+"use strict";
 
-hexo.on('generateBefore', function () {
+hexo.on("generateBefore", () => {
   if (hexo.locals.get) {
-    var data = hexo.locals.get('data')
+    let data = hexo.locals.get("data")
     data && data.book && (hexo.theme.config = data.book)
   }
 })
