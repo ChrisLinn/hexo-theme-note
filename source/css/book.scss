@@ -153,21 +153,12 @@ hr {
     color: black;
   }
 
-  .table-wrapper {
-    max-width: 100%;
-    margin: $padding-24 0;
-    overflow: auto;
-
-    table {
-      width: 100%;
-
-      th, td {
-        padding: $padding-12;
-        border-top: 1px solid $border-color;
-        text-align: left;
-      }
+  table {
+    th, td {
+      padding: $padding-2;
+      border-top: 1px solid $border-color;
+      border-left: 1px dotted $border-color;
     }
-
   }
 
   ul, ol {
