@@ -334,3 +334,13 @@ hr {
 .left {
   text-align: left;
 }
+
+//
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
